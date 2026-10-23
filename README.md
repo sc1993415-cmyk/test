@@ -2,12 +2,16 @@
 
 适用于 GitHub Pages 的静态官网，包含桌面与手机布局、服务介绍、转播场景筛选、联系弹窗和本地生成转播需求简报。
 
-## 开启网站
+## 网站地址
+
+https://sc1993415-cmyk.github.io/test/
+
+## 自动发布
 
 1. 打开仓库 Settings → Pages。
-2. Source 选择 Deploy from a branch。
-3. Branch 选择 main，文件夹选择 /(root)，点击 Save。
-4. 等待部署完成后访问 https://sc1993415-cmyk.github.io/test/ 。
+2. Source 选择 GitHub Actions。
+3. 发布流程位于 .github/workflows/static.yml，提交到 main 后自动运行，也可以在 Actions 中手动启动。
+4. 等待 Deploy static content to Pages 流程成功后访问上面的网站地址。
 
 Custom domain 留空，不需要购买域名。
 
